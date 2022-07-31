@@ -1,0 +1,286 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Analytics Dashboard</title>
+  </head>
+  <body>
+    <div>
+      <!---Sidebar starts here-->
+      <div class="bg-white">
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <h5 class="side-head">Main Navigation</h5>
+                
+              </div>
+              <div class="dropdown mt-3">
+                <!-- <p class="side-subhead" type="button" data-bs-toggle="dropdown"><i class="fa-solid fa-rocket"></i>Dashboard</p> -->
+
+                <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                 <span>   <i class="fa-solid fa-rocket"></i></span><span>Dashboard</span>
+                    <span class="right-icon ms-auto"><i class="bi bi-chevron-down"></i></span>
+                  </a>
+
+                <div class="collapse" id="collapseExample">
+                    <div>
+                     <ul class="navbar-nav ps-3"> 
+                        <li>
+                            <a href="#" class="nav-link px-5">
+                                <span class="me-2">Analytics</span>
+                            </a>
+                        </li>
+                     </ul>
+                    </div>
+                  </div>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Analytics</a></li>
+                </ul>
+                <p class="side-subhead" type="button" data-bs-toggle="dropdown"><i class="fa-thin fa-memo"></i>Pages</p>
+                <h5 class="side-head mt-2">Bootstrap Components</h5>
+                <p class="side-subhead" type="button" data-bs-toggle="dropdown"><i class="fa-thin fa-gem"></i>Elements</p>
+                <p class="side-subhead" type="button" data-bs-toggle="dropdown"><i class="fa-thin fa-memo"></i></i>Components</p>
+                <p class="side-subhead" type="button" data-bs-toggle="dropdown"><i class="fa-thin fa-memo"></i></i>Form Elements</p>
+                <p class="side-subhead" type="button" data-bs-toggle="dropdown"><i class="fa-thin fa-memo"></i></i>Tables</p>
+                <h5 class="side-head mt-2">Dashboard Boxes</h5>
+                <p class="side-subhead" type="button" data-bs-toggle="dropdown"><i class="fa-thin fa-memo"></i></i>Chart Boxes</p>
+                <h5 class="side-head mt-2">Charts</h5>
+                <p class="side-subhead" type="button" data-bs-toggle="dropdown"><i class="fa-thin fa-memo"></i></i>ChartJs</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!---Sidebar ends here-->
+
+      <!---Navbar starts here-->
+
+      <div class="nav-flex">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="d-flex container-fluid justify-content-between">
+          <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex">
+              <i
+                class="fa fa-search search-hover border-end-0 border rounded-pill"
+                type="text"
+                name=""
+                placeholder="search here..."
+              ></i>
+              <!-- <input
+              
+                type="text"
+                class="search-hover border-end-0 border rounded-pill"
+                name=""
+                placeholder="search here..."
+                
+              /> -->
+            </form>
+
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                <img class="rounded-circle" alt="50x50" width="50" height="50" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
+                data-holder-rendered="true">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+      <!---Navbar ends here-->
+
+      <main class="mt-5 pt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 fw-bold fs-3">
+                    Analytics Dashboard
+                </div>
+            </div>
+            <div class=" div1 p-3">
+                <h6>Portfolio Performance</h6>
+                <hr>
+                <div class="row p-4">
+                    <div class="col">
+                        <p>cash Deposit</p>
+                        <h1>1.7M </h1>
+                        
+                        <span class="text-danger">54.1%</span>
+                        <span class="text-primary ml-2">less earning</span>
+                    </div>
+                    <div class="col">
+                        <p>Invested Dividents</p>
+                        <h1>9M </h1>
+                        <span class="text-primary">grow Rates</span>
+                        <span class="text-danger ml-2">14.1%</span>
+                        
+                    </div>
+                    <div class="col">
+                        <p>capital Gain</p>
+                        <h1 class="text-success">$563 </h1>
+                        <span class="text-primary ">increased By</span>
+                        <span class="text-warning ml-2">7.1%</span>
+                       
+                    </div>
+                </div>
+                <button class="btn btn-primary px-4 py-2 b1 ">View Complete Report</button>
+            <div class="class-header mt-5">Company Agents Status</div>
+             <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Avatar</th>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Status</th>
+                            <th>Due Date</th>
+                            <th>Target Achievments</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>Micro Electronics</td>
+                            <td>Cancelled</td>
+                            <td>12 Dec</td>
+                            <td><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                            <td>Hire | Fire</td>
+                          </tr>
+                          <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>Micro Electronics</td>
+                            <td>Cancelled</td>
+                            <td>12 Dec</td>
+                            <td><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                            <td>Hire | Fire</td>
+                          </tr>
+                          <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>Micro Electronics</td>
+                            <td>Cancelled</td>
+                            <td>12 Dec</td>
+                            <td><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                            <td>Hire | Fire</td>
+                          </tr>
+                          <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>Micro Electronics</td>
+                            <td>Cancelled</td>
+                            <td>12 Dec</td>
+                            <td><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                            <td>Hire | Fire</td>
+                          </tr>
+                          <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>Micro Electronics</td>
+                            <td>Cancelled</td>
+                            <td>12 Dec</td>
+                            <td><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                            <td>Hire | Fire</td>
+                          </tr>
+                          <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>Micro Electronics</td>
+                            <td>Cancelled</td>
+                            <td>12 Dec</td>
+                            <td><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                            <td>Hire | Fire</td>
+                          </tr>
+                          <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>Micro Electronics</td>
+                            <td>Cancelled</td>
+                            <td>12 Dec</td>
+                            <td><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                            <td>Hire | Fire</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+             </div>
+        </div>
+      </main>
+
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
